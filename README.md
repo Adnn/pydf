@@ -18,7 +18,16 @@ Example on _macos_:
 
     $ ln -s $(pwd)/pydf /usr/local/bin/
 
+Example from _PowerShell_:
+
+    mkdir C:\Users\adn\bin
+    New-Item -ItemType SymbolicLink -Path "C:\Users\adn\bin\pydf" -Target "%PATH_TO_PYDF"
+
+Note: /c/Users/adn/bin is in `PATH` for git-bash.
+
 ## Usage
+
+**Attention**: On Windows, the venv activation seems to be valid only if the current working directory is on the same disk as the venv folder.
 
     $ ls -l
     image1.jpg

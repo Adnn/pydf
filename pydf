@@ -2,6 +2,6 @@
 
 script_path=$(dirname "$(readlink -n "$0")" | tr -d '\n')
 
-source "$script_path/venv/bin/activate"
+source "$script_path/venv/Scripts/activate"
 "$script_path/pydf.py" "$@"
 deactivate
